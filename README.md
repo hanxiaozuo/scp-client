@@ -33,9 +33,9 @@ For SCP details, see: <https://github.com/InternScience/scp>
         └── scp_client.py
 ```
 
-> 说明：`src/async_streaming_hub.py` 是一个多后端 MCP/SCP 服务聚合 Hub 的开发中示例（WIP），目前仓库主推与主要维护的是 client 工具。
+> 说明：`src/async_streaming_hub.py` 为多 SCP 服务器聚合 Hub 的开发中代码（WIP）：兼容 `streamable-http/sse`，统一对外聚合入口，集中注册并转发后端 SCP 工具调用，支持实时流式输出转发与异步任务管理（可配置超时/后台执行）。仓库当前仍以 client 工具为主。
 
-> Note: `src/async_streaming_hub.py` is an **in-progress (WIP)** example of a multi-backend MCP/SCP aggregation hub. The primary focus of this repo is the client utilities.
+> Note: `src/async_streaming_hub.py` is a **WIP** multi-SCP-server aggregation hub: supports `streamable-http/sse`, provides a unified public endpoint, centrally registers and proxies backend SCP tool calls, and supports streaming forwarding plus async task management (configurable timeout/background execution). This repo still primarily focuses on client utilities.
 
 ## 快速开始 / Quickstart
 
