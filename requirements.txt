@@ -1,0 +1,6 @@
+# Minimal runtime dependencies for the client utilities.
+# If you already have MCP SDK installed from another source, you may not need to install it again.
+
+mcp
+httpx
+fastmcp
